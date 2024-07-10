@@ -56,10 +56,16 @@ async function getCoordinates(url) {
     }
 
     const weatherData = await weatherResponse.json();
+    const feelsLike = weatherData.feels_like
+    const clouds = weatherData.cloud_pct;
     console.log(weatherData);
+    console.log(weatherData.feels_like);
+    console.log(feelsLike);
+    console.log(clouds);
   } catch (error) {
     console.error("Error fetching data:", error);
   }
+
 }
 
 
