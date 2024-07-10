@@ -1,20 +1,11 @@
-const button = document.getElementById('submitButton').addEventListener('click',formSubmit);
+document.getElementById('submitButton').addEventListener('click',formSubmit);
 
 
 function formSubmit(){
     const City = document.getElementById('recipient-name').value;
     const State = document.getElementById('message-text').value;
-}
-   
-
-
-
-
-
-
-
-
-const url = `https://api.api-ninjas.com/v1/geocoding?city=${City}&state=${State}&country=US`;
+    const url = `https://api.api-ninjas.com/v1/geocoding?city=${City}&state=${State}&country=US`;
+    console.log(City, State)
 
 async function getCoordinates() {
     const options = {
@@ -30,7 +21,8 @@ async function getCoordinates() {
     }
 
     const data = await result.json();
-  
+   
+
 
     const weatherUrl = `https://api.api-ninjas.com/v1/weather?lat=${data[0].latitude}&lon=${data[0].longitude}`;
             
@@ -48,5 +40,5 @@ async function getCoordinates() {
 }
 
 getCoordinates();
-console.log(weatherData);
 
+}
