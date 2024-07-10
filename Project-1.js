@@ -1,5 +1,16 @@
-const City = "Phoenix";
-const State = "Arizona";
+const button = document.getElementById('submitButton').addEventListener('click',formSubmit);
+
+
+function formSubmit(){
+    const City = document.getElementById('recipient-name').value;
+    const State = document.getElementById('message-text').value;
+}
+   
+
+
+
+
+
 
 
 
