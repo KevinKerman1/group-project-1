@@ -1,7 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.rain {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
 .navbar {
     background-color: #DDDED9;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+
+.buttondiv {
+margin-left: auto;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 150px;
+}
+
+footer {
+    background-color: #DDDED9;
+    text-align: center;
+
 }
