@@ -66,29 +66,36 @@ async function getCoordinates(url) {
         console.log(weatherData.feels_like);
         console.log(feelsLike);
         console.log(clouds);
+
+        updateWeather(feelsLike);
+
     } catch (error) {
         console.error("Error fetching data:", error);
     }
 
 }
 
-const feelsLike = "temp"
-let temp = 0
-const paragraph1 = document.getElementById('p1')
-const paragraph2 = document.getElementById('p2')
-const paragraph3 = document.getElementById('p3')
+const feelsLike = "temp";
+let temp = 0;
+const paragraph1 = document.getElementById('p1');
+const paragraph2 = document.getElementById('p2');
+const paragraph3 = document.getElementById('p3');
 
-switch (temp) {
-    case (temp <= 13.5):
-        paragraph2.textContent = ("Wear pants, a long sleeve, and bring a jacket");
-    case (temp <= 26.7):
-        paragraph2.textContent("Wear shorts, a short sleeve, and bring a jacket in case you get chilly");
-    case (temp <= 49):
-        paragraph2.textContent("Wear shorts, a tank top, and bring a fan!");
-    default:
-        paragraph2.textContent("Check the weather in your city");
+function updateWeather(temp) {
+    
+    switch (true) {
 
-console.log(temp = 13)
+        case (temp <= 13.5):
+    paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket";
+    break;
+        case (temp <= 26.7):
+    paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly";
+    break;
+        case (temp <= 49):
+    paragraph2.textContent = "Wear shorts, a tank top, and bring a fan!";
+    break;
+        default:
+    paragraph2.textContent = "Check the weather in your city";
+
 }
-
-
+}
