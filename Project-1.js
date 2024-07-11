@@ -1,10 +1,10 @@
 document.getElementById("submitButton").addEventListener("click", formSubmit);
 
 function formSubmit() {
-    let City = document.getElementById("recipient-name").value;
-    let State = document.getElementById("message-text").value;
-    const storedState = localStorage.getItem("State");
-    const storedCity = localStorage.getItem("City");
+  let City = document.getElementById("city-name").value;
+  let State = document.getElementById("state-text").value;
+  const storedState = localStorage.getItem("State");
+  const storedCity = localStorage.getItem("City");
 
     const url = `https://api.api-ninjas.com/v1/geocoding?city=${City}&state=${State}&country=US`;
     console.log(City, State, localStorage.getItem("City"), localStorage.getItem("State"));
