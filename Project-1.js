@@ -80,6 +80,9 @@ let temp = 0;
 const paragraph1 = document.getElementById('p1');
 const paragraph2 = document.getElementById('p2');
 const paragraph3 = document.getElementById('p3');
+const img1 = document.getElementById('img-1');
+const img2 = document.getElementById('img-2');
+const img3 = document.getElementById('img-3');
 
 function updateWeather(temp) {
 
@@ -88,17 +91,20 @@ function updateWeather(temp) {
         case (temp <= 16):
             paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket!";
             paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be a chilly one!");
-            paragraph3.textContent = "You may want to bring a warm hat, gloves, a jacket, and closed toe shoes with you today."
+            paragraph3.textContent = "You may want to bring a warm hat, gloves, a jacket, and closed-toed shoes with you today.";
+            img3.src = "Assets/outfit-images/colder-weather.webp";
             break;
         case (temp <= 26.7):
             paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
             paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be mostly warm, but may get cold enough for a jacket!");
-            paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today."
+            paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today.";
+            img3.src = "Assets/outfit-images/medium-weather.webp";
             break;
         case (temp <= 50):
             paragraph2.textContent = "Wear shorts, a tank top, and sandals!";
             paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be toasty!");
-            paragraph3.textContent = "You may want to bring a sun hat, sunglasses, a fan, sunscreen, and sandals with you today... or just stay inside and enjoy the A/C!"
+            paragraph3.textContent = "You may want to bring a sun hat, sunglasses, a fan, sunscreen, and sandals with you today... or just stay inside and enjoy the A/C!";
+            img3.src = "Assets/outfit-images/warmer-weather.webp";
             break;
         default:
             paragraph2.textContent = "Check the weather in your city";
