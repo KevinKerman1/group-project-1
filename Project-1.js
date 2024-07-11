@@ -1,10 +1,10 @@
 document.getElementById("submitButton").addEventListener("click", formSubmit);
 
 function formSubmit() {
-    let City = document.getElementById("city-name").value;
-    let State = document.getElementById("state-text").value;
-    const storedState = localStorage.getItem("State");
-    const storedCity = localStorage.getItem("City");
+  let City = document.getElementById("city-name").value;
+  let State = document.getElementById("state-text").value;
+  const storedState = localStorage.getItem("State");
+  const storedCity = localStorage.getItem("City");
 
     const url = `https://api.api-ninjas.com/v1/geocoding?city=${City}&state=${State}&country=US`;
     console.log(City, State, localStorage.getItem("City"), localStorage.getItem("State"));
@@ -73,27 +73,7 @@ async function getCoordinates(url) {
         console.error("Error fetching data:", error);
     }
 
-    const data = await result.json();
-    const weatherUrl = `https://api.api-ninjas.com/v1/weather?lat=${data[0].latitude}&lon=${data[0].longitude}`;
-
-    const weatherResponse = await fetch(weatherUrl, options);
-
-    if (!weatherResponse.ok) {
-        throw new Error("Network response was not ok " + weatherResponse.statusText);
-    }
-
-    const weatherData = await weatherResponse.json();
-    const feelsLike = weatherData.feels_like
-    const clouds = weatherData.cloud_pct;
-    console.log(weatherData);
-    console.log(weatherData.feels_like);
-    console.log(feelsLike);
-    console.log(clouds);
-} catch (error) {
-    console.error("Error fetching data:", error);
 }
-
-
 
 const feelsLike = "temp";
 let temp = 0;
