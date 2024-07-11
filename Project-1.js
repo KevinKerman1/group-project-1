@@ -82,20 +82,26 @@ const paragraph2 = document.getElementById('p2');
 const paragraph3 = document.getElementById('p3');
 
 function updateWeather(temp) {
-    
+
     switch (true) {
 
-        case (temp <= 13.5):
-    paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket";
-    break;
+        case (temp <= 16):
+            paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket!";
+            paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be a chilly one!");
+            paragraph3.textContent = "You may want to bring a warm hat, gloves, a jacket, and closed toe shoes with you today."
+            break;
         case (temp <= 26.7):
-    paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly";
-    break;
-        case (temp <= 49):
-    paragraph2.textContent = "Wear shorts, a tank top, and bring a fan!";
-    break;
+            paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
+            paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be mostly warm, but may get cold enough for a jacket!");
+            paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today."
+            break;
+        case (temp <= 50):
+            paragraph2.textContent = "Wear shorts, a tank top, and sandals!";
+            paragraph1.textContent = ("The temperature today is " + temp + "°C. It's going to be toasty!");
+            paragraph3.textContent = "You may want to bring a sun hat, sunglasses, a fan, sunscreen, and sandals with you today... or just stay inside and enjoy the A/C!"
+            break;
         default:
-    paragraph2.textContent = "Check the weather in your city";
+            paragraph2.textContent = "Check the weather in your city";
 
-}
+    }
 }
