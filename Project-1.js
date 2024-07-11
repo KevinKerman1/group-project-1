@@ -1,8 +1,8 @@
 document.getElementById("submitButton").addEventListener("click", formSubmit);
 
 function formSubmit() {
-  let City = document.getElementById("recipient-name").value;
-  let State = document.getElementById("message-text").value;
+  let City = document.getElementById("city-name").value;
+  let State = document.getElementById("state-text").value;
   const storedState = localStorage.getItem("State");
   const storedCity = localStorage.getItem("City");
 
@@ -65,6 +65,8 @@ async function getCoordinates(url) {
   } catch (error) {
     console.error("Error fetching data:", error);
   }
+
+  
 
 }
 
