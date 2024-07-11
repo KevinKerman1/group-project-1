@@ -2,7 +2,7 @@
 
 ## Description
 
-The weather varies, and sometimes we find ourselves expierencing discomfort while outside. This is something we want to prevent, and one of the 
+The weather varies, and sometimes we find ourselves experiencing discomfort while outside. This is something we want to prevent, and one of the 
 main reasons we wanted to start this project. We built this weather website to generate basic apparel and accessories based on the weather in a
 users area. Hopefully this can help users be more prepared for the weather, and prevent any discomfort.
 
