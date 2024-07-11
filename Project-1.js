@@ -68,5 +68,18 @@ async function getCoordinates(url) {
 
 }
 
+const weatherData.feels_like = "temp"
+let temp = 0
 
+switch (temp) {
+    case (temp <= 13.5 ):
+      return 
+    case caseExpression2:
+      statements
+    // …
+    case caseExpressionN:
+      statements
+    default:
+      statements
+  }
 
