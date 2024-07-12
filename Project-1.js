@@ -100,6 +100,8 @@ function updateWeather(tempCelsius) {
             img3.src = "Assets/accessory-images/colder-weather.webp";
             img1.src = "Assets/weather-images/cold.webp";
             img2.src = "Assets/outfit-images/cold.webp";
+            video1.src = "Assets/Weather-video/winter3.mov";
+
             break;
         case (tempCelsius <= 26.7):
             paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
@@ -108,6 +110,7 @@ function updateWeather(tempCelsius) {
             img3.src = "Assets/accessory-images/medium-weather.webp";
             img1.src = "Assets/weather-images/medium.webp";
             img2.src = "Assets/outfit-images/medium.webp";
+            video1.src = "Assets/Weather-video/medium.mov";
             break;
         case (tempCelsius <= 50):
             paragraph2.textContent = "Wear shorts, a tank top, and sandals!";
@@ -116,6 +119,7 @@ function updateWeather(tempCelsius) {
             img3.src = "Assets/accessory-images/warmer-weather.webp";
             img1.src = "Assets/weather-images/hot.webp";
             img2.src = "Assets/outfit-images/hot.webp";
+            video1.src = "Assets/Weather-video/hot.mov";
             break;
         default:
             paragraph2.textContent = "Check the weather in your city";
