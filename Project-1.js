@@ -87,44 +87,47 @@ const img1 = document.getElementById('img-1');
 const img2 = document.getElementById('img-2');
 const img3 = document.getElementById('img-3');
 
+
+
 function updateWeather(tempCelsius) {
     const tempFahrenheit = celsiusToFahrenheit(tempCelsius);
 
-    if (weatherCondition === '')
+
+    switch (true) {
+
+        case (tempCelsius <= 16):
+            paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket!";
+            paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be a chilly one!`);
+            paragraph3.textContent = "You may want to bring a warm hat, gloves, a jacket, and closed-toed shoes with you today.";
+            img3.src = "Assets/accessory-images/colder-weather.webp";
+            img1.src = "Assets/weather-images/cold.webp";
+            img2.src = "Assets/outfit-images/cold.webp";
+            video1.src = "Assets/Weather-video/winter3.mov";
 
 
-        switch (true) {
 
-            case (tempCelsius <= 16):
-                paragraph2.textContent = "Wear pants, a long sleeve, and bring a jacket!";
-                paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be a chilly one!`);
-                paragraph3.textContent = "You may want to bring a warm hat, gloves, a jacket, and closed-toed shoes with you today.";
-                img3.src = "Assets/accessory-images/colder-weather.webp";
-                img1.src = "Assets/weather-images/cold.webp";
-                img2.src = "Assets/outfit-images/cold.webp";
-                video1.src = "Assets/Weather-video/winter3.mov";
+            break;
+        case (tempCelsius <= 26.7):
 
-                break;
-            case (tempCelsius <= 26.7):
-                paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
-                paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be mostly warm, but may get cold enough for a jacket!`);
-                paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today.";
-                img3.src = "Assets/accessory-images/medium-weather.webp";
-                img1.src = "Assets/weather-images/medium.webp";
-                img2.src = "Assets/outfit-images/medium.webp";
-                video1.src = "Assets/Weather-video/medium.mov";
-                break;
-            case (tempCelsius <= 50):
-                paragraph2.textContent = "Wear shorts, a tank top, and sandals!";
-                paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be toasty!`);
-                paragraph3.textContent = "You may want to bring a sun hat, sunglasses, a fan, sunscreen, and sandals with you today... or just stay inside and enjoy the A/C!";
-                img3.src = "Assets/accessory-images/warmer-weather.webp";
-                img1.src = "Assets/weather-images/hot.webp";
-                img2.src = "Assets/outfit-images/hot.webp";
-                video1.src = "Assets/Weather-video/hot.mov";
-                break;
-            default:
-                paragraph2.textContent = "Check the weather in your city";
+            paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
+            paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be mostly warm, but may get cold enough for a jacket!`);
+            paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today.";
+            img3.src = "Assets/accessory-images/medium-weather.webp";
+            img1.src = "Assets/weather-images/medium.webp";
+            img2.src = "Assets/outfit-images/medium.webp";
+            video1.src = "Assets/Weather-video/medium.mov";
+            break;
+        case (tempCelsius <= 50):
+            paragraph2.textContent = "Wear shorts, a tank top, and sandals!";
+            paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be toasty!`);
+            paragraph3.textContent = "You may want to bring a sun hat, sunglasses, a fan, sunscreen, and sandals with you today... or just stay inside and enjoy the A/C!";
+            img3.src = "Assets/accessory-images/warmer-weather.webp";
+            img1.src = "Assets/weather-images/hot.webp";
+            img2.src = "Assets/outfit-images/hot.webp";
+            video1.src = "Assets/Weather-video/hot.mov";
+            break;
+        default:
+            paragraph2.textContent = "Check the weather in your city";
 
-        }
+    }
 }
