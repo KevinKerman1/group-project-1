@@ -1,5 +1,7 @@
 # Weather to Wear
 
+https://kevinkerman1.github.io/group-project-1/
+
 ## Description
 
 The weather varies, and sometimes we find ourselves experiencing discomfort while outside. This is something we want to prevent, and one of the 
