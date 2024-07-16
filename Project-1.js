@@ -87,6 +87,8 @@ const img1 = document.getElementById('img-1');
 const img2 = document.getElementById('img-2');
 const img3 = document.getElementById('img-3');
 
+
+
 function updateWeather(tempCelsius) {
     const tempFahrenheit = celsiusToFahrenheit(tempCelsius);
 
@@ -102,8 +104,11 @@ function updateWeather(tempCelsius) {
             img2.src = "Assets/outfit-images/cold.webp";
             video1.src = "Assets/Weather-video/winter3.mov";
 
+
+
             break;
         case (tempCelsius <= 26.7):
+
             paragraph2.textContent = "Wear shorts, a short sleeve, and bring a jacket in case you get chilly!";
             paragraph1.textContent = (`The temperature today is ${tempCelsius}°C (${tempFahrenheit.toFixed(1)}°F). It's going to be mostly warm, but may get cold enough for a jacket!`);
             paragraph3.textContent = "You may want to bring a ball cap, sunglasses, a jacket, and sandals with you today.";
