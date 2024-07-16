@@ -123,6 +123,7 @@ function updateWeather(tempCelsius) {
             break;
         default:
             paragraph2.textContent = "Check the weather in your city";
+            
 
     }
 }
