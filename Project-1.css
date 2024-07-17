@@ -3,9 +3,6 @@ body, html {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
 
 #mainButton {
     background-color: #148ab5;
@@ -13,11 +10,14 @@ h1 {
 
 }
 
+h1 {
+    margin: 0;
+}
+
 
 .logo {
     margin-right: 10px;
 }
-
 
 .navbar {
     background-color: #DDDED9;
@@ -57,9 +57,9 @@ h1 {
 
 
 .buttondiv {
-margin-left: auto;
-
-}
+    margin-left: auto;
+    
+    }
 
 .cardcontainer {
     display: flex;
