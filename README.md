@@ -17,19 +17,17 @@ Installation not necessary.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
 After loading the website, click on the 'Enter City & State' button located in the top right corner.
 
-![alt text](assets/usage_enterCity&State.PNG)
+![alt text](./Assets/usage_enterCity&State.PNG)
 
 Once the 'Enter City & State' box pops up, insert the City and State you'd like to view, and hit the 'Show me the weather' button in the bottom right corner. 
 
-![alt text](assets/usage_showMeTheWeater.PNG)
+![alt text](./Assets/usage_showMeTheWeater.PNG)
 
 Once the weather for you area loads to the page, you can view the weather and suggested outfits and accessories. 
 
-![alt text](assets/usage_viewWeather.PNG)
+![alt text](./Assets/usage_viewWeather.PNG)
 
 ## Credits
 
