@@ -39,7 +39,7 @@ function confirmPrev(storedCity, storedState) {
 async function getCoordinates(url) {
     const options = {
         headers: {
-            "X-Api-Key": "bqCDMIQBl8n8JAdyO7tMYw==cmnAhPj015c3slkP",
+            "X-Api-Key": "WU94IDwhbpD3L70QJRzQ9wZNShA5pdLHomb51ACv",
         },
     };
 
